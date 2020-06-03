@@ -69,19 +69,18 @@
   
 ### Reading data
   
-    let keys = []
-      try {
-        keys = await AsyncStorage.getAllKeys()
-        .then(keys => {
-            AsyncStorage.multiGet(keys)
-            .then(res => {
-                // use data
-            })
-            .catch(e) {}
+    try {
+    await AsyncStorage.getAllKeys()
+    .then(keys => {
+        AsyncStorage.multiGet(keys)
+        .then(res => {
+            // use data
         })
         .catch(e) {}
-      } catch(e) {
-        // read key error
-      }
+    })
+    .catch(e) {}
+    } catch(e) {
+    // read key error
+    }
 
     
