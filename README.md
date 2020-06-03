@@ -91,6 +91,12 @@
     .then(){}
     .catch(e){}
     
+### Updating Data
+
+    await AsyncStorage.mergeItem(key, updatedValue)
+    .then(){}
+    .catch(e){}
+    
 ### Deleting Data
 
     await AsyncStorage.removeItem(key)
