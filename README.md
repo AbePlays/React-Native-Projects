@@ -47,7 +47,7 @@
     
 ## Using Async Storage 📚
 
-  ### Storing data
+### Storing data
 
     import AsyncStorage from '@react-native-community/async-storage';
 
@@ -67,6 +67,21 @@
     
   '@storage_Key' should be a unique value. Current time can be used as a unique parameter. Make sure it's a String.
   
-  ### Reading data
+### Reading data
+  
+    let keys = []
+      try {
+        keys = await AsyncStorage.getAllKeys()
+        .then(keys => {
+            AsyncStorage.multiGet(keys)
+            .then(res => {
+                // use data
+            })
+            .catch(e) {}
+        })
+        .catch(e) {}
+      } catch(e) {
+        // read key error
+      }
 
     
