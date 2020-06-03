@@ -26,15 +26,23 @@
    ### Move between the screens
    
     function HomeScreen({ navigation }) {
-        return (
-            <View>
-                <Text>Home Screen</Text>
-                <Button
-                title="Go to Details"
-                onPress={() => navigation.navigate('Details')}
-                />
-            </View>
-        );
+      return (
+        <View>
+          <Text>Home Screen</Text>
+          <Button
+            title="Go to Details"
+            onPress={() => navigation.navigate('Details')}
+          />
+        </View>
+      );
+    }
+    
+    function DetailsScreen() {
+      return (
+        <View>
+          <Text>Details Screen</Text>
+        </View>
+      );
     }
 
     
