@@ -25,16 +25,16 @@
     
    ### Move between the screens
    
-      function HomeScreen({ navigation }) {
-          return (
+    function HomeScreen({ navigation }) {
+        return (
             <View>
-              <Text>Home Screen</Text>
-              <Button
+                <Text>Home Screen</Text>
+                <Button
                 title="Go to Details"
                 onPress={() => navigation.navigate('Details')}
-              />
+                />
             </View>
-          );
-        }
+        );
+    }
 
     
