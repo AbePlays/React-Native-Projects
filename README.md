@@ -83,6 +83,12 @@
     // read key error
     }
     
+### Deleting Data
+
+    await AsyncStorage.removeItem(key)
+    .then() {}
+    .catch(e) {}
+    
 ## Using FlatList
     const DATA = [
     {
