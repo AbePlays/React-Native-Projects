@@ -2,7 +2,7 @@
 
 ## Adding Navigation 🏃
 
-    Install React-Navigation dependency : expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+  Install React-Navigation dependency : expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
     
     import { NavigationContainer } from '@react-navigation/native';
     import { createStackNavigator } from '@react-navigation/stack';
@@ -100,14 +100,14 @@
     ];
     
     export default function App() {
-    return (
-      <SafeAreaView>
-        <FlatList
-          data={DATA}
-          renderItem={({ item }) => <Text>{item.title}</Text>}
-          keyExtractor={item => item.id}
-        />
-      </SafeAreaView>
+      return (
+        <SafeAreaView>
+          <FlatList
+            data={DATA}
+            renderItem={({ item }) => <Text>{item.title}</Text>}
+            keyExtractor={item => item.id}
+          />
+        </SafeAreaView>
       );
     }
 
