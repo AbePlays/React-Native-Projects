@@ -62,5 +62,7 @@
         // saving error
       }
     }
+    
+  '@storage_Key' should be a unique value. Current time can be used as a unique parameter. Make sure it's a String.
 
     
