@@ -68,6 +68,8 @@
   '@storage_Key' should be a unique value. Current time can be used as a unique parameter. Make sure it's a String.
   
 ### Reading data
+
+#### Read all data
   
     try {
     await AsyncStorage.getAllKeys()
@@ -82,6 +84,12 @@
     } catch(e) {
     // read key error
     }
+    
+#### Read single data
+
+    await AsyncStorage.getItem(key)
+    .then(){}
+    .catch(e){}
     
 ### Deleting Data
 
