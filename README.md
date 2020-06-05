@@ -138,7 +138,8 @@
   To install run, npm install redux
   
     const reducer = (state=[], action) => {
-      
+      //Do stuff
+      return state
     }
   
     const store = Redux.createStore(reducer);
