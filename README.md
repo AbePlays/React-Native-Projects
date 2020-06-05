@@ -146,7 +146,12 @@
     
     store.getState();
     
-    const action = {
+    const actionOne = {
+      type: 'what to do',
+      payload: 'where to do'
+    }
+    
+    const actionTwo = {
       type: 'what to do',
       payload: 'where to do'
     }
