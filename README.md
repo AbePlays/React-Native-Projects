@@ -156,4 +156,5 @@
       payload: 'where to do'
     }
     
-    store.dispatch(action);
+    store.dispatch(actionOne);
+    store.dispatch(actionTwo
