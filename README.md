@@ -132,4 +132,22 @@
       );
     }
 
+# Redux
+
+  Redux is essentially a state management library.
+  To install run, npm install redux
+  
+    const reducer = (state=[], action) => {
+      
+    }
+  
+    const store = Redux.createStore(reducer);
     
+    store.getState();
+    
+    const action = {
+      type: 'what to do',
+      payload: 'where to do'
+    }
+    
+    store.dispatch(action);
