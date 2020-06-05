@@ -132,7 +132,7 @@
       );
     }
 
-## Redux
+## Redux 🌟
 
   Redux is essentially a state management library.
   To install run, npm install redux
